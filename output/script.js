@@ -1,4 +1,4 @@
-"use strict";
+import { Vondami } from './Clasess/Players.js';
 // // // let playerName = "Masrafi";
 // // // console.log(playerName);
 // // // // playerName = 45;
@@ -56,27 +56,32 @@
 // const userDetails = (id : numString , user : objects) => {
 //     console.log(`User id is ${id} , name is ${user?.name}`);
 // };
-let functionSing;
-functionSing = (a, b) => {
-    // console.log("mahin howlader");
-    // console.log(a,b)
-    return a;
-};
-console.log(functionSing("mahin", 34));
-// class constractor 
-class Players {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} is playing`);
-    }
-}
-const masrafi = new Players("mashrafi", 40, "Bangladesh");
-const sakib = new Players("Sakib", 50, "Bangladesh");
-const Playerss = [];
-Playerss.push(masrafi);
-Playerss.push(sakib);
-console.log(Playerss);
+// let functionSing: (a: string, b: number) => number | string;
+// functionSing = (a: string, b: number) => {
+//     // console.log("mahin howlader");
+//     // console.log(a,b)
+//     return a
+// };
+// console.log(functionSing("mahin", 34))
+// // class constractor 
+// class Players {
+//     name: string;
+//     age: number;
+//     country: string;
+//     constructor(n: string, a: number, c: string) {
+//         this.name = n;
+//         this.age = a;
+//         this.country = c;
+//     }
+//     play() {
+//         console.log(`${this.name} from ${this.country} is playing`);
+//     }
+// }
+// const masrafi = new Players("mashrafi", 40, "Bangladesh");
+// const sakib = new Players("Sakib", 50, "Bangladesh");
+// const Playerss: Players[] = [];
+// Playerss.push(masrafi);
+// Playerss.push(sakib);
+const antor = new Vondami("mashrafi", 40, "Bangladesh");
+const pagol = new Vondami("pagol", 50, "Bangladesh");
+console.log(antor, pagol);
